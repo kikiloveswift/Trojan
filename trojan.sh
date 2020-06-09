@@ -156,7 +156,7 @@ EOF
 	systemctl restart nginx.service
 	#申请https证书
     mkdir /usr/src/trojan-cert
-	if 1
+	if true
 		cd /usr/src
 	#wget https://github.com/trojan-gfw/trojan/releases/download/v1.13.0/trojan-1.13.0-linux-amd64.tar.xz
 	wget https://github.com/trojan-gfw/trojan/releases/download/v1.14.0/trojan-1.14.0-linux-amd64.tar.xz
