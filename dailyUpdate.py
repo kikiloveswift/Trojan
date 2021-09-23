@@ -19,9 +19,9 @@ def createFileIfNeeded(filePath):
         return
 
 def Touch(file_name):
-       if file_name in os.listdir('.'):
+        if file_name in os.listdir('.'):
               print("file exist!")
-       else:
+        else:
               print("creating %s" %file_name)
               fid = open(file_name,'w')
               fid.close()  
@@ -36,10 +36,10 @@ pattern.findall(string)
 # clone 证书 放到 
 cert_git_dir = "/var/certDir/bingxiaolee/"
 if os.path.exists(cert_git_dir):
-    # pull
+      # pull
     os.chdir(cert_git_dir)
     subprocess.call(["git", "pull", "origin", "HEAD"])
- else:
+else:
     # clone
     os.mkdir("/var/certDir/")
     os.chdir("/var/certDir/")
