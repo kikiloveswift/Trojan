@@ -95,7 +95,9 @@ os.chdir(certDir)
 
 # Touch("cert.pem")
 # Touch("privkey.pem")
-os.remove(cert_des_path)
-os.remove(privkey_des_path)
+if os.path.exists(cert_des_path):
+    os.remove(cert_des_path)
+if os.path.exists(privkey_des_path):
+    os.remove(privkey_des_path)
 os.symlink(max_numCert_Path, cert_des_path)
 os.symlink(max_privkey_Path, privkey_des_path)

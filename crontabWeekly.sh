@@ -8,5 +8,5 @@ fi
 
 rm -rf /var/autoScript/*
 cd /var/autoScript/
-wget https://raw.githubusercontent.com/kikiloveswift/Trojan/master/dailyUpdate.py
+wget --no-check-certificate --no-cache --no-cookies https://raw.githubusercontent.com/kikiloveswift/Trojan/master/dailyUpdate.py
 python3 dailyUpdate.py
